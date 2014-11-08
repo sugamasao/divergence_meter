@@ -1,5 +1,7 @@
 # DivergenceMeter
 
+[![Build Status](https://travis-ci.org/sugamasao/divergence_meter.svg)](https://travis-ci.org/sugamasao/divergence_meter)
+
 TODO: Write a gem description
 
 ## Installation
