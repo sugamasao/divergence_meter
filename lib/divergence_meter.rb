@@ -7,4 +7,3 @@ module DivergenceMeter
     LevenshteinDistance.run(str1, str2)
   end
 end
-

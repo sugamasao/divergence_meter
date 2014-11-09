@@ -27,12 +27,6 @@ Style/GuardClause:
 Style/RegexpLiteral:
   MaxSlashes: 0
 
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-Style/TrailingBlankLines:
-  Enabled: false
-
 # Offense count: 2
 # Cop supports --auto-correct.
 Style/UnneededPercentQ:
