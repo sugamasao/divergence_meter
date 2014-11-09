@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = DivergenceMeter::VERSION
   spec.authors       = ["sugamasao"]
   spec.email         = ["sugamasao@gmail.com"]
-  spec.summary       = %q{Levenshtein distance tool.}
-  spec.description   = %q{Levenshtein distance tool.}
+  spec.summary       = %q(Levenshtein distance tool.)
+  spec.description   = %q(Levenshtein distance tool.)
   spec.homepage      = ""
   spec.license       = "MIT"
 

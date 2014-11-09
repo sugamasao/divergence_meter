@@ -24,12 +24,6 @@ Style/GuardClause:
   Enabled: false
 
 # Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: PreferredDelimiters.
-Style/PercentLiteralDelimiters:
-  Enabled: false
-
-# Offense count: 2
 Style/RegexpLiteral:
   MaxSlashes: 0
 
