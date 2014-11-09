@@ -27,11 +27,6 @@ Style/GuardClause:
 Style/RegexpLiteral:
   MaxSlashes: 0
 
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/SpecialGlobalVars:
-  Enabled: false
-
 # Offense count: 15
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, SupportedStyles.

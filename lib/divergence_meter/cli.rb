@@ -25,7 +25,7 @@ module DivergenceMeter
     private
 
     def usage
-      "usage: #{ $0 } word1 word2"
+      "usage: #{ $PROGRAM_NAME } word1 word2"
     end
 
     def version
