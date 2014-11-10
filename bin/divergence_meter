@@ -3,4 +3,10 @@
 require 'divergence_meter'
 
 DivergenceMeter::CLI.new(ARGV).parse
-puts DivergenceMeter.run(ARGV[0], ARGV[1])
+
+target = ARGV.shift
+if ARGV.size == 1
+  puts DivergenceMeter.run(target, ARGV.first)
+else
+  puts DivergenceMeter.did_you_mean(target, ARGV)
+end
