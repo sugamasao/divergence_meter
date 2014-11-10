@@ -15,7 +15,7 @@ module DivergenceMeter
         exit
       end
 
-      unless @argv.size == 2
+      if @argv.size < 2
         puts 'Invalid Argument'
         puts usage
         exit 1
@@ -25,7 +25,15 @@ module DivergenceMeter
     private
 
     def usage
-      "usage: #{ $PROGRAM_NAME } word1 word2"
+<<-EOS
+usage: #{ $PROGRAM_NAME } word1 word2
+  -> levenshtein distance
+
+or
+
+usage: #{ $PROGRAM_NAME } target word1 word2
+  -> target did you mean word1 or word2
+EOS
     end
 
     def version
