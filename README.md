@@ -1,6 +1,9 @@
 # DivergenceMeter
 
+[![Gem Version](https://badge.fury.io/rb/divergence_meter.svg)](http://badge.fury.io/rb/divergence_meter)
 [![Build Status](https://travis-ci.org/sugamasao/divergence_meter.svg)](https://travis-ci.org/sugamasao/divergence_meter)
+[![Code Climate](https://codeclimate.com/github/sugamasao/divergence_meter/badges/gpa.svg)](https://codeclimate.com/github/sugamasao/divergence_meter)
+[![Inline docs](http://inch-ci.org/github/sugamasao/divergence_meter.svg?branch=master)](http://inch-ci.org/github/sugamasao/divergence_meter)
 
 DivergenceMeter is Levenshtein distance tool and Library.
 
