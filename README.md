@@ -27,21 +27,19 @@ Or install it yourself as:
 calculate Levenshtein distance.
 
 ```sh
-➜  divergence_meter git:(master) ✗ divergence_meter hoge hoge
-0
-➜  divergence_meter git:(master) ✗ divergence_meter hoge hog1
+$ divergence_meter retire tire
+2
+$ divergence_meter retire retare
 1
-➜  divergence_meter git:(master) ✗ divergence_meter hoge fuga
-3
+$ divergence_meter retire hoge
+5
 ```
 
 did you mean?
 
 ```sh
-➜  divergence_meter git:(master) ✗ divergence_meter hoge hog1 fuga
-hog1
-➜  divergence_meter git:(master) ✗ divergence_meter hoge hog1 fuga hoge
-hoge
+$ divergence_meter retire tire retare hoge
+retare
 ```
 
 ### use library
@@ -51,7 +49,8 @@ calculate Levenshtein distance.
 ```ruby
 require 'divergence_meter'
 
-puts DivergenceMeter.run('hoge', 'hog1') # => 1
+puts DivergenceMeter.distance('retire', 'tire')
+# => 2
 ```
 
 did you mean?
@@ -59,7 +58,8 @@ did you mean?
 ```ruby
 require 'divergence_meter'
 
-puts DivergenceMeter.did_you_mean('hoge', %w(hog1 fuga)) # => hog1
+puts DivergenceMeter.did_you_mean('retire', %w(tire retare hoge))
+# => hog1
 ```
 
 ## Contributing
