@@ -4,7 +4,7 @@ require_relative 'divergence_meter/cli'
 
 module DivergenceMeter
   class << self
-    def run(word1, word2)
+    def distance(word1, word2)
       LevenshteinDistance.run(word1, word2)
     end
 
@@ -12,7 +12,7 @@ module DivergenceMeter
       size = target.size
 
       Array(words).map { |word|
-        { word: word, distance: run(target, word) }
+        { word: word, distance: distance(target, word) }
       }.sort { |a, b|
         if a[:distance] == b[:distance]
           (size - a[:word].size).abs <=> (size - b[:word].size).abs

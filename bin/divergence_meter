@@ -6,7 +6,7 @@ DivergenceMeter::CLI.new(ARGV).parse
 
 target = ARGV.shift
 if ARGV.size == 1
-  puts DivergenceMeter.run(target, ARGV.first)
+  puts DivergenceMeter.distance(target, ARGV.first)
 else
   puts DivergenceMeter.did_you_mean(target, ARGV)
 end

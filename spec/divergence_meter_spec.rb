@@ -5,18 +5,18 @@ describe DivergenceMeter do
     expect(DivergenceMeter::VERSION).not_to be nil
   end
 
-  describe '.run' do
+  describe '.distance' do
 
     it 'hoge vs hoga' do
-      expect(DivergenceMeter.run('hoge', 'hoga')).to eq(1)
+      expect(DivergenceMeter.distance('hoge', 'hoga')).to eq(1)
     end
 
     it 'apple vs play' do
-      expect(DivergenceMeter.run('apple', 'play')).to eq(4)
+      expect(DivergenceMeter.distance('apple', 'play')).to eq(4)
     end
 
     it 'perl vs pearl' do
-      expect(DivergenceMeter.run('perl', 'pearl')).to eq(1)
+      expect(DivergenceMeter.distance('perl', 'pearl')).to eq(1)
     end
   end
 
