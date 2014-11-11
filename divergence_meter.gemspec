@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = DivergenceMeter::VERSION
   spec.authors       = ['sugamasao']
   spec.email         = ['sugamasao@gmail.com']
-  spec.summary       = 'Levenshtein distance tool.'
-  spec.description   = 'Levenshtein distance tool.'
-  spec.homepage      = ''
+  spec.summary       = 'Levenshtein distance tool and Library.'
+  spec.description   = 'Levenshtein distance tool and Library. provide Levenshtein distance and did you mean keyword.'
+  spec.homepage      = 'https://github.com/sugamasao/divergence_meter'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'rspec', '~> 3.1'
+  spec.add_development_dependency 'simplecov', '~> 0.9'
+  spec.add_development_dependency 'rubocop', '~> 0.27'
 end
