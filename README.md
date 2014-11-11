@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/sugamasao/divergence_meter.svg)](https://travis-ci.org/sugamasao/divergence_meter)
 
-TODO: Write a gem description
+DivergenceMeter is Levenshtein distance tool and Library.
 
 ## Installation
 
@@ -22,7 +22,45 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### use command line.
+
+calculate Levenshtein distance.
+
+```sh
+➜  divergence_meter git:(master) ✗ divergence_meter hoge hoge
+0
+➜  divergence_meter git:(master) ✗ divergence_meter hoge hog1
+1
+➜  divergence_meter git:(master) ✗ divergence_meter hoge fuga
+3
+```
+
+did you mean?
+
+```sh
+➜  divergence_meter git:(master) ✗ divergence_meter hoge hog1 fuga
+hog1
+➜  divergence_meter git:(master) ✗ divergence_meter hoge hog1 fuga hoge
+hoge
+```
+
+### use library
+
+calculate Levenshtein distance.
+
+```ruby
+require 'divergence_meter'
+
+puts DivergenceMeter.run('hoge', 'hog1') # => 1
+```
+
+did you mean?
+
+```ruby
+require 'divergence_meter'
+
+puts DivergenceMeter.did_you_mean('hoge', %w(hog1 fuga)) # => hog1
+```
 
 ## Contributing
 
