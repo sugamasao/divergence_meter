@@ -46,6 +46,10 @@ module DivergenceMeter
       list
     end
 
+    # levenshtein distance's cost
+    # @param [String] char1
+    # @param [String] char2
+    # @return [Fixnum] cost
     def cost(char1, char2)
       char1 == char2 ? 0 : 1
     end
