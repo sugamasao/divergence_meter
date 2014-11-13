@@ -63,7 +63,7 @@ did you mean?
 require 'divergence_meter'
 
 puts DivergenceMeter.did_you_mean('retire', %w(tire retare hoge))
-# => hog1
+# => retare
 ```
 
 ## Contributing
