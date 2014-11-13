@@ -1,9 +1,14 @@
 module DivergenceMeter
+  # CLI Option Parser
   class CLI
+
+    # @param [Array] argv ARGV
     def initialize(argv)
       @argv = argv
     end
 
+    # parse argv
+    # @return [void]
     def parse
       if @argv.include?('-h') || @argv.include?('--help')
         puts usage

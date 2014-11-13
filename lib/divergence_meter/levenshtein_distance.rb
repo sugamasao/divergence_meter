@@ -1,9 +1,19 @@
 module DivergenceMeter
+  # algorithm for levenshtein distance class.
   class LevenshteinDistance
+
+    # calculate levenshetein distance short cut method.
+    # @param [String] word1 word1
+    # @param [String] word2 word2
+    # @return [Fixnum] distance
     def self.run(word1, word2)
       new.run(word1, word2)
     end
 
+    # calculate levenshetein distance
+    # @param [String] word1 word1
+    # @param [String] word2 word2
+    # @return [Fixnum] distance
     def run(word1, word2)
       list = create_list(word1.size, word2.size)
 
