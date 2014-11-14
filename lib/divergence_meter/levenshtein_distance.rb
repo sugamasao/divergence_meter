@@ -1,7 +1,6 @@
 module DivergenceMeter
   # algorithm for levenshtein distance class.
   class LevenshteinDistance
-
     # calculate levenshetein distance short cut method.
     # @param [String] word1 word1
     # @param [String] word2 word2

@@ -1,7 +1,6 @@
 module DivergenceMeter
   # CLI Option Parser
   class CLI
-
     # cli initialize
     # @param [Array] argv ARGV
     def initialize(argv)
