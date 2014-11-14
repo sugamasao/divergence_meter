@@ -6,7 +6,6 @@ describe DivergenceMeter do
   end
 
   describe '.distance' do
-
     it 'hoge vs hoga' do
       expect(DivergenceMeter.distance('hoge', 'hoga')).to eq(1)
     end
@@ -23,6 +22,9 @@ describe DivergenceMeter do
   describe '.もしかして(did_you_mean)' do
     it '__send vs [__send__, send]' do
       expect(DivergenceMeter.もしかして(':__send', methods)).to eq(:__send__)
+    end
+    it '__send vs [send, __send__](reverse)' do
+      expect(DivergenceMeter.もしかして(':__send', methods.reverse)).to eq(:__send__)
     end
     it 'tire, retire' do
       expect(DivergenceMeter.もしかして('tire', %w(tire retire))).to eq('tire')
