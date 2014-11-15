@@ -1,5 +1,6 @@
 require 'divergence_meter/version'
 require_relative 'divergence_meter/levenshtein_distance'
+require_relative 'divergence_meter/did_you_mean'
 require_relative 'divergence_meter/cli'
 
 # DiveergenceMeter main module
@@ -16,17 +17,7 @@ module DivergenceMeter
     # @param [Array<String>] words check words
     # @return [String] did you mean word
     def did_you_mean(target, words)
-      size = target.size
-
-      Array(words).map do |word|
-        { word: word, distance: distance(target, word) }
-      end.sort do |a, b|
-        if a[:distance] == b[:distance]
-          (size - a[:word].size).abs <=> (size - b[:word].size).abs
-        else
-          a[:distance] <=> b[:distance]
-        end
-      end.first[:word]
+      DidYouMean.new(target, words).run
     end
 
     alias_method :もしかして, :did_you_mean
