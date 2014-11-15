@@ -25,6 +25,11 @@ module DivergenceMeter
 
     private
 
+    # sort by distance
+    # @param [Hash] a sort object a
+    # @param [Hash] b sort object b
+    # @param [Fixnum] target_size target word string size
+    # @return [Fixnum] sort point
     def sort_distance(a, b, target_size)
       a_distance = a[:distance]
       b_distance = b[:distance]
