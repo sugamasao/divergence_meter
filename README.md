@@ -43,8 +43,10 @@ $ divergence_meter retire hoge
 
 did you mean?
 
+`retare` is typo. `tire retire hoge` is dictionary words.
+
 ```sh
-$ divergence_meter retire tire retare hoge
+$ divergence_meter retare tire retire hoge
 retare
 ```
 
@@ -64,8 +66,8 @@ did you mean?
 ```ruby
 require 'divergence_meter'
 
-puts DivergenceMeter.did_you_mean('retire', %w(tire retare hoge))
-# => retare
+puts DivergenceMeter.did_you_mean('retare', %w(tire  retire hoge))
+# => retire
 ```
 
 ## Contributing
