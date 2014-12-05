@@ -63,6 +63,8 @@ puts DivergenceMeter.distance('retire', 'tire')
 
 did you mean?
 
+`retare` is typo. `tire retire hoge` is dictionary words.
+
 ```ruby
 require 'divergence_meter'
 
