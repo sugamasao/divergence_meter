@@ -9,3 +9,8 @@ begin
   YARD::Rake::YardocTask.new
 rescue LoadError
 end
+
+desc 'generate changelog'
+task :changelog do
+  system 'bundle exec github_changelog_generator -f %Y/%m/%d'
+end
